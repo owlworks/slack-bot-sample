@@ -1,0 +1,6 @@
+slack:
+  token: your_slacktoken
+  api_url:
+    post_message: https://slack.com/api/chat.postMessage
+catbatch:
+  channel: test
