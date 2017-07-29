@@ -3,4 +3,4 @@ slack:
   api_url:
     post_message: https://slack.com/api/chat.postMessage
 catbatch:
-  channel: #test
+  channel: '#test'
