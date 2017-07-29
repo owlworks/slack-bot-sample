@@ -45,12 +45,12 @@ class SlackBatch
 end
 
 class CatBatch < SlackBatch
-  CATAPI_URL = "http://thecatapi.com/api/images/get?format=xml"
+  CATAPI_URL = 'http://thecatapi.com/api/images/get?format=xml'
 
   def execute
     doc = Nokogiri::XML(open(CATAPI_URL).read)
     @logger.info doc
-    img_url = doc.xpath("//url").text
+    img_url = doc.xpath('//url').text
     post_message(channel: CONFIG.catbatch.channel, text: img_url)
   end
 end
